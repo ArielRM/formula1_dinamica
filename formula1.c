@@ -8,6 +8,16 @@ int main() {
 		perror("Erro ao abrir \"formula1.csv\"");
 		exit(EXIT_FAILURE);
 	}
+	
+	int records,fields;
+	
+	getCSVInfo(input, &records, &fields);
+	
+	char *tabela[fields][records];
+	
+	
+	
+	
 	fclose(input);
 	return 0;
 }
